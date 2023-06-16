@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Eliminar Resultado</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="../js/resultado.js"></script>
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body onload="obtenerIDresultadoEliminar();">
+        <div class="container">
+            <!-- Barra de navegaciÃ³n -->
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="../img/logo_24x24.png" alt="Logo" class="d-inline-block align-text-top">
+                    CRM
+                  </a>
+                </div>
+              </nav>
+            <!--Titulo -->
+            <h1>Eliminar Resultado</h1>
+            <hr>
+            <!-- Tabla con lista de clientes-->
+            <div class="alert alert-danger" role="alert" id="alt_eliminacion">
+            </div>
+            <input type="button" class="btn btn-danger" value="Eliminar" onclick="eliminarResultado();">
+            <input type="button" class="btn btn-secondary" value="Cancelar" onclick="javascript:history.back();">
+            <!--Campo oculto-->
+            <input type="hidden" id="hdn_id_resultado">
+        </div>
+    </body>
+</html>
